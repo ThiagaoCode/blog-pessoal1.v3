@@ -1,9 +1,11 @@
 package org.generation.blogPessoal.model;
 
+//DTO (data transfer Object) -> tira o ataque do usuario, meio de proteçao. uma subcamada como meio de comunicacao
 
 public class UsuarioLogin {
 	
 
+	private Long id;
 	
 	private String nome;
 	
@@ -17,6 +19,14 @@ public class UsuarioLogin {
 	private String token;
 	
 	
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;

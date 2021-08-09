@@ -16,7 +16,7 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank
+	@NotBlank (message = "O campo nao pode ser vazio")
 	@Size(min = 2, max = 100)
 	private String nome;
 	
@@ -25,7 +25,7 @@ public class Usuario {
 	private String usuario;
 	
 	@NotBlank
-	@Size(min = 5, max = 100)
+	@Size(min = 5, max = 100, message = "senha de 5 a 100")
 	private String senha;
 
 	public Long getId() {
